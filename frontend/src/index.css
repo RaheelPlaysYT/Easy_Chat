@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  /* This tells daisyUI which themes to include in your bundle */
+  themes: light, dark, cupcake, bumblebee, emerald, corporate, synthwave, 
+          retro, cyberpunk, valentine, halloween, garden, forest, aqua, 
+          lofi, pastel, fantasy, wireframe, black, luxury, dracula, 
+          cmyk, autumn, business, acid, lemonade, night, coffee, 
+          winter, dim, nord, sunset;
+}
+
+/* Optional: If you want to link system 'dark' mode to a specific daisyUI theme */
+:root {
+  --daisyui-theme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --daisyui-theme: dark;
+  }
+}
